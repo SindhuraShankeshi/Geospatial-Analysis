@@ -38,8 +38,6 @@ The focus is on reproducible, easy-to-run notebooks/scripts that produce interac
 - images/
   - sf_crime_map.png
   - world_choropleth.png
-- scripts/
-  - generate_maps.py                # Optional script version to create and save maps
 - README.md
 
 ## Data sources
