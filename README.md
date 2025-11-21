@@ -28,12 +28,11 @@ The focus is on reproducible, easy-to-run notebooks/scripts that produce interac
 - Minimal, dependency-light Python code so maps can be generated locally
 
 ## Repository structure
-(Adjust these paths if your repository structure differs.)
 - notebooks/
   - sf_crime_analysis.ipynb         # Notebook to generate clustered SF crime map
   - migration_choropleth.ipynb      # Notebook to generate world choropleth for Canada migration
 - data/
-  - sf_crime_2016.csv               # (example) SF PD dataset (2016)
+  - sf_crime_2016.csv               
   - migration_to_canada_1980_2013.csv
   - world_countries.geojson
 - images/
@@ -48,7 +47,6 @@ The focus is on reproducible, easy-to-run notebooks/scripts that produce interac
 - United Nations / public migration data (1980–2013) — aggregated to country-to-country flows.
 - World GeoJSON (public domain / Natural Earth-derived files).
 
-Always keep raw data out of version control if it contains sensitive or very large files; include a small sample or instructions to download the full dataset.
 
 ## Requirements
 - Python 3.8+ recommended
@@ -103,24 +101,8 @@ pip install pandas folium numpy jupyter
 - Viewing generated maps:
   - The notebooks/scripts typically call `map.save("sf_crime_map.html")` or similar. Open the saved HTML in your browser.
 
-## Examples & outputs
-- images/sf_crime_map.png — a screenshot of a clustered SF crime map (place a screenshot here to document results).
-- images/world_choropleth.png — a screenshot of the choropleth map showing migration to Canada.
-
-Tip: When sharing maps, include the generated .html (or a link) alongside the screenshots so others can interact with the visualization.
-
-## Development & contribution
-- If you want help adding:
-  - a requirements.txt (I can generate one from your environment),
-  - ready-to-run scripts that mirror the notebooks,
-  - pre-built sample datasets (small subsets),
-  I can prepare those and open a PR-style patch you can review.
-
-- Contributions are welcome — open an issue to discuss feature requests or bug reports, and submit PRs for changes.
-
-## License & contact
-- Add your preferred license (e.g., MIT, Apache-2.0). If none is included yet, I recommend adding a LICENSE file.
-- Contact: SindhuraShankeshi (GitHub) — update this line with preferred email or profile link.
+## Contact
+- Contact: SindhuraShankeshi (GitHub)
 
 Acknowledgements
 - Folium (Leaflet.js) for interactive maps
